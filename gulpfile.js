@@ -22,19 +22,19 @@ var path = {
         html: "dist/",
         js: "dist/assets/js/",
         css: "dist/assets/css/",
-        images: "dist/assets/img/"
+        images: "dist/assets/images/"
     },
     src: {
         html: "src/**/*.pug",
         js: "src/assets/js/*.js",
         css: "src/assets/sass/style.sass",
-        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
+        images: "src/assets/images/**/*.{jpg,png,svg,gif,ico}"
     },
     watch: {
         html: "src/**/*.pug",
         js: "src/assets/js/**/*.js",
         css: "src/assets/sass/**/*.sass",
-        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
+        images: "src/assets/images/**/*.{jpg,png,svg,gif,ico}"
     },
     clean: "./dist"
 }
@@ -60,7 +60,7 @@ function html() {
         .pipe(rigger())
         .pipe(plumber())
         .pipe(dest(path.build.html))
-        .pipe(browsersync.stream());
+        .pipe(browsersync.reload());
 }
 
 function css() {
@@ -84,7 +84,7 @@ function css() {
             extname: ".css"
         }))
         .pipe(dest(path.build.css))
-        .pipe(browsersync.stream());
+        .pipe(browsersync.reload());
 }
 
 function js() {
@@ -98,7 +98,7 @@ function js() {
             extname: ".js"
         }))
         .pipe(dest(path.build.js))
-        .pipe(browsersync.stream());
+        .pipe(browsersync.reload());
 }
 
 function images() {
