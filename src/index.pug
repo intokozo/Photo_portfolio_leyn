@@ -6,83 +6,14 @@ head
   title Oksana Leyn
   link(href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:300,700&display=swap&subset=cyrillic' rel='stylesheet')
   link(rel='stylesheet' href='./assets/css/style.min.css')
-header
-  .container
-    .navbar
-      .buttons
-        a.active(href='#') Главная
-        a(href='#') Галерея
-        a(href='#') Контакты
-      .logo_main
-        img(src='./assets/images/icons/logo.png' alt='')
-      .social
-        img(src='./assets/images/icons/vk.png' alt='')
-        img(src='./assets/images/icons/instagram.png' alt='')
-        img(src='./assets/images/icons/blog.png' alt='')
-        img(src='./assets/images/icons/watsapp.png' alt='')
-        img(src='./assets/images/icons/telegram.png' alt='')
-      h1 Оксана Лейн
-      h2.mine-subtitle Фотограф в Ростове-на-Дону
-      button.discover_button Познакомиться
-    // /.navbar
-  // /.container
-section.recent
-  .container
-    h2.recent_title Примеры работ
-    img.man_on_road(src='./assets/images/img/recent_works/smile770.jpg' alt='')
-    img(src='./assets/images/img/recent_works/three.jpg' alt='')
-    img(src='./assets/images/img/recent_works/two.jpg' alt='')
-    img(src='./assets/images/img/recent_works/big.jpg' alt='')
-section.catalogs
-  .container
-    .cat
-      img.lovestory(src='/./assets/images/img/colections/lovestory.jpg' alt='')
-      .description_catalog
-        h2 Love Story
-        p
-            |Любовь — это не решение. Это чувство. Если бы мы могли решать, кого любить, все было бы гораздо проще. Но куда менее волшебно.<br><br>Южный парк (South Park)
-            
-        button more
-    .cat
-      .description_catalog
-        h2 Портрет
-        p
-          | Ведь мы — то, что мы думаем. Наши эмоции — рабы наших мыслей, а мы в свою очередь рабы эмоций.<br><br>Элизабет Гилберт. Есть, молиться, любить
-        button more
-      img.mother(src='./assets/images/img/colections/portret.jpg' alt='')
-    .cat
-      img.portret(src='./assets/images/img/colections/report.jpg' alt='')
-      .description_catalog
-        h2 Репортаж
-        p
-          | Либо мир так мал, либо мы так огромны, во всяком случае, мы заполняем его целиком.<br><br>Франц Кафка
-        button more
-    .cat
-      .description_catalog
-        h2 Свадебная фотосессия
-        p
-          | Человек несовершенен без второй половинки. Понимая это интуитивно, человек разыскивает свое совершенство, что приводит к свадьбе. <br><br>Платон
-        button more
-      img.mother(src='./assets/images/img/colections/wedding.jpg' alt='')
-    .cat
-      img.portret(src='./assets/images/img/colections/studio.jpg' alt='')
-      .description_catalog
-        h2 Студийная фотосессия
-        p
-          | «Все люди одинаковы!». Нет это не так. Все люди — разные, и право отличаться от других надо отстаивать до конца и не заботясь о последствиях.<br><br>Пауло Коэльо. Победитель остается один
-        button more
-section.get_in
-  .container
-    h2 Напиши мне
-    form(action='send')
-      input(type='text' placeholder='Your name')
-      input(type='text' placeholder='Email')
-      textarea(name='' id='' cols='25' rows='10' placeholder='Message')
-    button send
-    p Подпишись:
-    .social-black
-      img(src='./assets/images/icons/vk.png' alt='')
-      img(src='./assets/images/icons/instagram.png' alt='')
-      img(src='./assets/images/icons/blog.png' alt='')
-      img(src='./assets/images/icons/watsapp.png' alt='')
-      img(src='./assets/images/icons/telegram.png' alt='')
+body
+  block header
+    include ./includes/_header.pug
+  main
+    block recent
+      include ./includes/_recent.pug
+    block catalogs
+      include ./includes/_catalogs.pug
+    block get_in
+      include ./includes/_get_in.pug
+  
