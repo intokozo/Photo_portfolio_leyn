@@ -170,6 +170,8 @@ button:active {
 }
 
 .recent-img .item1 {
+    width: 770px;
+    height: 770px;
     grid-row: 1 / 3;
 }
 
@@ -270,4 +272,16 @@ button:active {
 .center {
     display: block;
     margin: 0 auto;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider .slide {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 }

@@ -13,6 +13,7 @@ header
   height: 900px
   background: url('../images/img/bg/main_img.jpg') center center/cover no-repeat
   text-align: center
+
 h1 
   color: $gold_color 
   font-family: "Playfair Display" 
@@ -114,6 +115,8 @@ button:active
   grid-template-rows: repeat(2,1fr) auto
   grid-gap: 30px
   .item1
+    width: 770px
+    height: 770px
     grid-row: 1 / 3
   .item4
     grid-column: 1 / 3  
@@ -184,3 +187,10 @@ button:active
 .center
   display: block
   margin: 0 auto
+
+.slider
+  position: relative
+  .slide
+    position: absolute
+    opacity: 0
+    transition: all 1s

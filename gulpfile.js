@@ -50,7 +50,7 @@ function browserSync(done) {
 }
 
 function browserSyncReload(done) {
-    browsersync.reload();
+    browsersync.reload({stream:true});
 }
 
 
@@ -60,7 +60,7 @@ function html() {
         .pipe(rigger())
         .pipe(plumber())
         .pipe(dest(path.build.html))
-        .pipe(browsersync.reload());
+        .pipe(browsersync.reload({stream:true}));
 }
 
 function css() {
@@ -84,7 +84,7 @@ function css() {
             extname: ".css"
         }))
         .pipe(dest(path.build.css))
-        .pipe(browsersync.reload());
+        .pipe(browsersync.reload({stream:true}));
 }
 
 function js() {
@@ -98,7 +98,7 @@ function js() {
             extname: ".js"
         }))
         .pipe(dest(path.build.js))
-        .pipe(browsersync.reload());
+        .pipe(browsersync.reload({stream:true}));
 }
 
 function images() {
