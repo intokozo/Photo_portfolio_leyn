@@ -1,37 +1,18 @@
-- var recent_path = './assets/images/img/recent_works/';
+mixin slider(num, name_file)
+  div(class="slider item" + num)
+    - var arr = ["", "_1", "_2", "_3", "_4", "_5"];
+    each n in arr
+      img.slide(src=recent_path + name_file + n + '.jpg' alt='')
 
-section.recent
+section.recent#recent
     .container
       h2.recent_title Примеры работ
       .recent-img
-        .slider.item1
-          img.slide(src=recent_path + 'middle.jpg' alt='')
-          img.slide(src=recent_path + 'middle_1.jpg' alt='')
-          img.slide(src=recent_path + 'middle_2.jpg' alt='')
-          img.slide(src=recent_path + 'middle_3.jpg' alt='')
-          img.slide(src=recent_path + 'middle_4.jpg' alt='')
-          img.slide(src=recent_path + 'middle_5.jpg' alt='')
-        .slider.item2
-          img.slide(src=recent_path + 'little_one.jpg' alt='')
-          img.slide(src=recent_path + 'little_one_1.jpg' alt='')
-          img.slide(src=recent_path + 'little_one_2.jpg' alt='')
-          img.slide(src=recent_path + 'little_one_3.jpg' alt='')
-          img.slide(src=recent_path + 'little_one_4.jpg' alt='')
-          img.slide(src=recent_path + 'little_one_5.jpg' alt='')
-        .slider.item3
-          img.slide(src=recent_path + 'little_two.jpg' alt='')
-          img.slide(src=recent_path + 'little_two_1.jpg' alt='')
-          img.slide(src=recent_path + 'little_two_2.jpg' alt='')
-          img.slide(src=recent_path + 'little_two_3.jpg' alt='')
-          img.slide(src=recent_path + 'little_two_4.jpg' alt='')
-          img.slide(src=recent_path + 'little_two_5.jpg' alt='')
-        .slider.item4
-          img.slide(src=recent_path + 'big.jpg' alt='')
-          img.slide(src=recent_path + 'big_1.jpg' alt='')
-          img.slide(src=recent_path + 'big_2.jpg' alt='')
-          img.slide(src=recent_path + 'big_3.jpg' alt='')
-          img.slide(src=recent_path + 'big_4.jpg' alt='')
-          img.slide(src=recent_path + 'big_5.jpg' alt='')
+        + slider(1, 'middle')
+        + slider(2, 'little_one')
+        + slider(3, 'little_two')
+        + slider(4, 'big')
+        
         
         
         

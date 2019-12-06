@@ -1,15 +1,13 @@
-section.get_in
+section.get_in#get_in
     .container
       h2 Напиши мне
-      form(action='send')
-        input(type='text' placeholder='Ваше имя')
-        input(type='text' placeholder='Email')
-        textarea(name='' id='' cols='25' rows='10' placeholder='Сообщение')
-      button отправить
-      p.center Подпишись:
-      .social.center
-        img(src='./assets/images/icons/vk.png' alt='')
-        img(src='./assets/images/icons/instagram.png' alt='')
-        img(src='./assets/images/icons/blog.png' alt='')
-        img(src='./assets/images/icons/watsapp.png' alt='')
-        img(src='./assets/images/icons/telegram.png' alt='')
+      .contact-field
+        a(href="https://vk.com/oksana_ph")
+          img(src=icons_path + "vk.png", alt="VK")
+        a(href="https://www.instagram.com/oksanaleyn/")
+          img(src=icons_path + "instagram.png", alt="Instagram")
+        a(href="https://teleg.run/Oksana_Leyn")
+          img(src=icons_path + "telegram.png", alt="Telegram")
+        a(href="https://api.whatsapp.com/send?phone=79515224657")
+          img(src=icons_path + "watsapp.png", alt="WatsApp")
+        

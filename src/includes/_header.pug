@@ -3,16 +3,23 @@ header
     .navbar
       .links
         a(href='#') Главная
-        a(href='#') Галерея
-        a(href='#') Контакты
+        a(href='#catalogs') Галерея
+        a(href='#get_in') Контакты
       .logo_main
-        img(src='./assets/images/icons/logo.png' alt='')
+        a(href="#")
+          img(src='./assets/images/icons/logo.png' alt='')
       .social
-        img(src='./assets/images/icons/vk.png' alt='')
-        img(src='./assets/images/icons/instagram.png' alt='')
-        img(src='./assets/images/icons/blog.png' alt='')
-        img(src='./assets/images/icons/watsapp.png' alt='')
-        img(src='./assets/images/icons/telegram.png' alt='')
+        a(href="https://vk.com/oksana_ph")
+          img(src=icons_path + 'vk.png' alt='' title="VK")
+        a(href="https://www.instagram.com/oksanaleyn/")
+          img(src=icons_path + 'instagram.png' alt='' title="Instagram")
+        a(href="https://oksanaleyn.ru")
+          img(src=icons_path + 'blog.png' alt='' title="Blog")
+        a(href="https://teleg.run/Oksana_Leyn")
+          img(src=icons_path + 'telegram.png' alt='' title="Telegram")
+        a(href="https://api.whatsapp.com/send?phone=79515224657")
+          img(src=icons_path + 'watsapp.png' alt='' title="WhatsApp")
     h1 Оксана Лейн
     h2.mine-subtitle Фотограф в Ростове-на-Дону
-    button.discover_button Познакомиться
+    form(action="#recent")
+      button.discover_button Познакомиться

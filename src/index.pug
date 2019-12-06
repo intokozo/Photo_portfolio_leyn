@@ -1,20 +1,21 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  meta(http-equiv='X-UA-Compatible' content='ie=edge')
-  title Oksana Leyn
-  link(href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:300,700&display=swap&subset=cyrillic' rel='stylesheet')
-  link(rel='stylesheet' href='./assets/css/style.min.css')
-body
-  block header
-    include ./includes/_header.pug
+extends ./includes/layouts/base
+
+block vars
+  include ./includes/inserts/_var.pug
+
+block meta
+  include ./includes/inserts/_meta.pug
+
+block links
+  include ./includes/inserts/_links.pug
+
+block content    
+  include ./includes/_header.pug
+  a.scrollTop
   main
-    block recent
-      include ./includes/_recent.pug
-    block catalogs
-      include ./includes/_catalogs.pug
-    block get_in
-      include ./includes/_get_in.pug
-  script(src="./assets/js/app.js")
+    include ./includes/_recent.pug
+    include ./includes/_catalogs.pug
+    include ./includes/_get_in.pug
+  include ./includes/inserts/_scripts.pug
+  
   

@@ -1,5 +1,5 @@
 $gold_color: #c0a064
-$art_font: "Playfair Display" 
+$art_font: "Playfair Display"
 
 * 
   padding: 0 
@@ -8,7 +8,19 @@ $art_font: "Playfair Display"
   src: local(pompadur), url(fonts/pompadur.ttf) 
 html 
   font-family: 'Roboto', sans-serif 
-  background-color: #ffffff 
+  background-color: #ffffff
+
+#upbutton
+  background: url("/images/up.png") no-repeat top left;
+  height: 60px
+  width: 60px
+  bottom: 30px
+  right: 30px
+  cursor: pointer
+  display: none
+  position: fixed
+  z-index: 999
+
 header 
   height: 900px
   background: url('../images/img/bg/main_img.jpg') center center/cover no-repeat
@@ -64,20 +76,27 @@ h2
 .logo_main 
   display: block
   padding-right: 50px
+  &:hover
+      opacity: 0.8
+      cursor: pointer
 .social 
   height: 24px 
   display: flex
   justify-content: space-between
-  img
-    height: 100%
-    cursor: pointer
-    opacity: 0.5
-    margin-right: 15px
-    transition: all 0.3s
-    &:hover
-      opacity: 1
-    &:last-child
-      margin-right: 0
+  a
+    display: block
+    width: 32px
+    img      
+      height: 100%
+      cursor: pointer
+      opacity: 0.5
+      transition: all 0.3s
+      &:hover
+        opacity: 1
+        width: 30px
+        height: 30px
+      &:last-child
+        margin-right: 0
 
 button 
   background: rgba(255, 255, 255, 0) 
@@ -103,6 +122,7 @@ button:active
 .discover_button 
   margin-top: 120px 
 
+// Recent -----------------------------------------------
 
 .recent 
   background-color: #f8f6f4 
@@ -124,6 +144,7 @@ button:active
   text-align: center 
   margin-bottom: 58px 
 
+// Catalogs --------------------------------------
 
 .description_catalog 
   display: block 
@@ -141,56 +162,107 @@ button:active
   height: 390px 
   display: flex
   justify-content: space-between
+  opacity: 0
+  transition: all 1s
+  animation-duration: 1s
 
+  // Get in -------------------------------------------
 
 .get_in 
-  padding: 100px 0
-  min-height: 825px 
+  padding: 100px 0 50px 0
+  min-height: 400px 
   text-align: center 
   h2 
-    margin-bottom: 60px 
-  button 
-    margin-bottom: 60px 
-  p 
-    margin-bottom: 30px 
-    color: #6c6a68 
-    font-size: 16px 
-    font-weight: 300 
-    line-height: 26px 
-  input 
-    display: block 
-    width: 370px 
-    height: 56px 
-    border: 1px solid #6c6a68 
-    margin: 0 auto 
-    margin-bottom: -1px 
-    font-size: 16px 
-    font-weight: 300 
-    line-height: 26px 
-    padding: 20px 
-    outline: none 
-  textarea 
-    display: block 
-    width: 370px 
-    border: 1px solid #6c6a68 
-    font-family: 'Roboto' 
-    font-size: 16px 
-    font-weight: 300 
-    line-height: 26px 
-    padding: 20px 
-    outline: none 
-    min-height: 180px 
-    overflow: auto 
-    resize: none 
-    margin: 0 auto 
-    margin-bottom: 20px 
-.center
-  display: block
-  margin: 0 auto
+    margin-bottom: 50px 
+  .contact-field
+    display: flex
+    justify-content: center
+    img
+      cursor: pointer
+      transition: all 0.3s
+      width: 85px
+      height: 85px
+      &:hover
+        transition: all 0.3s
+        width: 92px
+        height: 92px
+
+        
+
+
+// Slider ----------------------------------
 
 .slider
   position: relative
   .slide
     position: absolute
     opacity: 0
-    transition: all 1s
+    transition: all 1.5s
+
+// Fade in animation start ------------------------------------
+
+@-webkit-keyframes fadeInLeft
+  from
+    opacity: 0
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
+
+  to
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+@keyframes fadeInLeft
+  from
+    opacity: 0
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
+
+  to
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+.fadeInLeft
+  -webkit-animation-name: fadeInLeft
+  animation-name: fadeInLeft
+  opacity: 1
+
+@-webkit-keyframes fadeInRight
+  from
+    opacity: 0
+    -webkit-transform: translate3d(100%, 0, 0)
+    transform: translate3d(100%, 0, 0)
+
+  to
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+@keyframes fadeInRight
+  from
+    opacity: 0
+    -webkit-transform: translate3d(100%, 0, 0)
+    transform: translate3d(100%, 0, 0)
+
+  to
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+.fadeInRight
+  -webkit-animation-name: fadeInRight
+  animation-name: fadeInRight
+  opacity: 1
+
+// Button Up ------------------------------------
+
+.scrollTop
+	background: url('../images/icons/arrow.png') 0 0 no-repeat
+	width: 50px 
+	height: 60px 
+	bottom: 10px
+	left: 90%
+
+.scrollTop:hover
+	background-position: 0 -76px
