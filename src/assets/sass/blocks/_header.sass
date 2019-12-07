@@ -1,0 +1,53 @@
+.header
+  height: 900px
+  background: url('../images/img/bg/main_img.jpg') center center/cover no-repeat
+  text-align: center
+  display: flex
+  flex-direction: column
+
+  .header__navbar
+    display: flex 
+    padding-top: 30px 
+    justify-content: space-between
+    .header__links-block
+      text-align: left 
+      display: flex 
+      justify-content: space-between
+      .header__link
+        text-decoration: none
+        margin-right: 15px
+        opacity: 0.5 
+        color: #2c2a28 
+        font-size: 16px 
+        font-weight: 700 
+        line-height: 36px 
+        text-align: left
+        transition: all 0.3s
+        &:last-child
+          margin-right: 0
+        &:hover
+          opacity: 0.8
+    .header__logo_main
+        display: block
+        padding-right: 50px
+        &:hover
+          opacity: 0.8
+          cursor: pointer
+  .header__title
+    color: $gold_color 
+    font-family: "Playfair Display" 
+    font-size: 60px 
+    font-weight: 700 
+    line-height: 90px 
+    margin-top: 340px 
+  .header__subtitle
+    color: #6c6a68
+    font-size: 24px 
+    font-weight: 300 
+    line-height: 36px 
+    letter-spacing: 2.4px 
+    margin-top: 29px
+  .header__button
+    margin: 120px auto 0 auto
+    width: 300px
+

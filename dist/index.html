@@ -8,79 +8,71 @@
   <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="container">
-      <div class="navbar">
-        <div class="links"><a href="#">Главная</a><a href="#catalogs">Галерея</a><a href="#get_in">Контакты</a></div>
-        <div class="logo_main"><a href="#"><img src="./assets/images/icons/logo.png" alt=""></a></div>
-        <div class="social"><a href="https://vk.com/oksana_ph"><img src="./assets/images/icons/vk.png" alt="" title="VK"></a><a href="https://www.instagram.com/oksanaleyn/"><img src="./assets/images/icons/instagram.png" alt="" title="Instagram"></a><a href="https://oksanaleyn.ru"><img src="./assets/images/icons/blog.png" alt="" title="Blog"></a><a href="https://teleg.run/Oksana_Leyn"><img src="./assets/images/icons/telegram.png" alt="" title="Telegram"></a><a href="https://api.whatsapp.com/send?phone=79515224657"><img src="./assets/images/icons/watsapp.png" alt="" title="WhatsApp"></a></div>
-      </div>
-      <h1>Оксана Лейн</h1>
-      <h2 class="mine-subtitle">Фотограф в Ростове-на-Дону</h2>
-      <form action="#recent">
-        <button class="discover_button">Познакомиться</button>
-      </form>
+      <nav class="header__navbar">
+        <div class="header__links-block"><a class="header__link" href="#">Главная</a><a class="header__link" href="#catalogs">Галерея</a><a class="header__link" href="#get_in">Контакты</a></div>
+        <div class="header__logo_main"><a class="header__logo_link" href="#"><img class="header__logo_img" src="./assets/images/icons/logo.png" alt=""></a></div>
+        <div class="social"><a class="social__link" href="https://vk.com/oksana_ph"><img class="social__img" src="./assets/images/icons/vk.png" alt="" title="VK"></a><a class="social__link" href="https://www.instagram.com/oksanaleyn/"><img class="social__img" src="./assets/images/icons/instagram.png" alt="" title="Instagram"></a><a class="social__link" href="https://oksanaleyn.ru"><img class="social__img" src="./assets/images/icons/blog.png" alt="" title="Blog"></a><a class="social__link" href="https://teleg.run/Oksana_Leyn"><img class="social__img" src="./assets/images/icons/telegram.png" alt="" title="Telegram"></a><a class="social__link" href="https://api.whatsapp.com/send?phone=79515224657"><img class="social__img" src="./assets/images/icons/watsapp.png" alt="" title="WhatsApp"></a></div>
+      </nav>
+      <h1 class="header__title">Оксана Лейн</h1>
+      <h2 class="subtitle header__subtitle">Фотограф в Ростове-на-Дону<a class="button header__button" href="#recent">Познакомиться</a></h2>
     </div>
   </header><a class="scrollTop"></a>
   <main>
     <section class="recent" id="recent">
       <div class="container">
-        <h2 class="recent_title">Примеры работ</h2>
-        <div class="recent-img">
-              <div class="slider item1"><img class="slide" src="./assets/images/img/recent_works/middle.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/middle_1.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/middle_2.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/middle_3.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/middle_4.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/middle_5.jpg" alt="">
+        <h2 class="recent__title">Примеры работ</h2>
+        <div class="recent__imgs">
+              <div class="slider item1"><img class="recent__img slide" src="./assets/images/img/recent_works/middle.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/middle_1.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/middle_2.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/middle_3.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/middle_4.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/middle_5.jpg" alt="">
               </div>
-              <div class="slider item2"><img class="slide" src="./assets/images/img/recent_works/little_one.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/little_one_1.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/little_one_2.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/little_one_3.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/little_one_4.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/little_one_5.jpg" alt="">
+              <div class="slider item2"><img class="recent__img slide" src="./assets/images/img/recent_works/little_one.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/little_one_1.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/little_one_2.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/little_one_3.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/little_one_4.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/little_one_5.jpg" alt="">
               </div>
-              <div class="slider item3"><img class="slide" src="./assets/images/img/recent_works/little_two.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/little_two_1.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/little_two_2.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/little_two_3.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/little_two_4.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/little_two_5.jpg" alt="">
+              <div class="slider item3"><img class="recent__img slide" src="./assets/images/img/recent_works/little_two.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/little_two_1.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/little_two_2.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/little_two_3.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/little_two_4.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/little_two_5.jpg" alt="">
               </div>
-              <div class="slider item4"><img class="slide" src="./assets/images/img/recent_works/big.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/big_1.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/big_2.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/big_3.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/big_4.jpg" alt=""><img class="slide" src="./assets/images/img/recent_works/big_5.jpg" alt="">
+              <div class="slider item4"><img class="recent__img slide" src="./assets/images/img/recent_works/big.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/big_1.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/big_2.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/big_3.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/big_4.jpg" alt=""><img class="recent__img slide" src="./assets/images/img/recent_works/big_5.jpg" alt="">
               </div>
         </div>
       </div>
     </section>
     <section class="catalogs" id="catalogs">
       <div class="container">
-        <div class="cat"><img class="lovestory" src="./assets/images/img/colections/lovestory.jpg" alt="">
-          <div class="description_catalog">
-            <h2>Love Story</h2>
-            <p>Любовь — это не решение. Это чувство. Если бы мы могли решать, кого любить, все было бы гораздо проще. Но куда менее волшебно.<br><br>Южный парк (South Park)</p>
-            <button>подробнее</button>
+        <div class="catalogs__catalog"><img class="catalogs__img lovestory" src="./assets/images/img/colections/lovestory.jpg" alt="">
+          <div class="catalogs__description-block">
+            <h2 class="subtitile catalogs__subtitile">Love Story</h2>
+            <p class="catalogs__text">Любовь — это не решение. Это чувство. Если бы мы могли решать, кого любить, все было бы гораздо проще. Но куда менее волшебно.<br><br>Южный парк (South Park)</p><a class="button catalogs__button">подробнее</a>
           </div>
         </div>
-        <div class="cat">
-          <div class="description_catalog">
-            <h2>Портрет</h2>
-            <p>Ведь мы — то, что мы думаем. Наши эмоции — рабы наших мыслей, а мы в свою очередь рабы эмоций.<br><br>Элизабет Гилберт. Есть, молиться, любить</p>
-            <button>подробнее</button>
-          </div><img class="mother" src="./assets/images/img/colections/portret.jpg" alt="">
+        <div class="catalogs__catalog">
+          <div class="catalogs__description-block">
+            <h2 class="subtitile catalogs__subtitile">Портрет</h2>
+            <p class="catalogs__text">Ведь мы — то, что мы думаем. Наши эмоции — рабы наших мыслей, а мы в свою очередь рабы эмоций.<br><br>Элизабет Гилберт. Есть, молиться, любить</p><a class="button catalogs__button">подробнее</a>
+          </div><img class="catalogs__img mother" src="./assets/images/img/colections/portret.jpg" alt="">
         </div>
-        <div class="cat"><img class="portret" src="./assets/images/img/colections/report.jpg" alt="">
-          <div class="description_catalog">
-            <h2>Репортаж</h2>
-            <p>Либо мир так мал, либо мы так огромны, во всяком случае, мы заполняем его целиком.<br><br>Франц Кафка</p>
-            <button>подробнее</button>
+        <div class="catalogs__catalog"><img class="catalogs__img portret" src="./assets/images/img/colections/report.jpg" alt="">
+          <div class="catalogs__description-block">
+            <h2 class="subtitile catalogs__subtitile">Репортаж</h2>
+            <p class="catalogs__text">Либо мир так мал, либо мы так огромны, во всяком случае, мы заполняем его целиком.<br><br>Франц Кафка</p><a class="button catalogs__button">подробнее</a>
           </div>
         </div>
-        <div class="cat">
-          <div class="description_catalog">
-            <h2>Свадебная фотосессия</h2>
-            <p>Человек несовершенен без второй половинки. Понимая это интуитивно, человек разыскивает свое совершенство, что приводит к свадьбе. <br><br>Платон</p>
-            <button>подробнее</button>
-          </div><img class="mother" src="./assets/images/img/colections/wedding.jpg" alt="">
+        <div class="catalogs__catalog">
+          <div class="catalogs__description-block">
+            <h2 class="subtitile catalogs__subtitile">Свадебная фотосессия</h2>
+            <p class="catalogs__text">Человек несовершенен без второй половинки. Понимая это интуитивно, человек разыскивает свое совершенство, что приводит к свадьбе. <br><br>Платон</p><a class="button catalogs__button">подробнее</a>
+          </div><img class="catalogs__img mother" src="./assets/images/img/colections/wedding.jpg" alt="">
         </div>
-        <div class="cat"><img class="portret" src="./assets/images/img/colections/studio.jpg" alt="">
-          <div class="description_catalog">
-            <h2>Студийная фотосессия</h2>
-            <p>«Все люди одинаковы!». Нет это не так. Все люди — разные, и право отличаться от других надо отстаивать до конца и не заботясь о последствиях.<br><br>Пауло Коэльо. Победитель остается один</p>
-            <button>подробнее</button>
+        <div class="catalogs__catalog"><img class="catalogs__img portret" src="./assets/images/img/colections/studio.jpg" alt="">
+          <div class="catalogs__description-block">
+            <h2 class="subtitile catalogs__subtitile">Студийная фотосессия</h2>
+            <p class="catalogs__text">«Все люди одинаковы!». Нет это не так. Все люди — разные, и право отличаться от других надо отстаивать до конца и не заботясь о последствиях.<br><br>Пауло Коэльо. Победитель остается один</p><a class="button catalogs__button">подробнее</a>
           </div>
         </div>
       </div>
     </section>
     <section class="get_in" id="get_in">
       <div class="container">
-        <h2>Напиши мне</h2>
-        <div class="contact-field"><a href="https://vk.com/oksana_ph"><img src="./assets/images/icons/vk.png" alt="VK"></a><a href="https://www.instagram.com/oksanaleyn/"><img src="./assets/images/icons/instagram.png" alt="Instagram"></a><a href="https://teleg.run/Oksana_Leyn"><img src="./assets/images/icons/telegram.png" alt="Telegram"></a><a href="https://api.whatsapp.com/send?phone=79515224657"><img src="./assets/images/icons/watsapp.png" alt="WatsApp"></a></div>
+        <h2 class="get_in__subtitle">Напиши мне</h2>
+        <div class="get_in__contact-field"><a class="get_in__link" href="https://vk.com/oksana_ph"><img class="get_in__img" src="./assets/images/icons/vk.png" alt="VK"></a><a class="get_in__link" href="https://www.instagram.com/oksanaleyn/"><img class="get_in__img" src="./assets/images/icons/instagram.png" alt="Instagram"></a><a class="get_in__link" href="https://teleg.run/Oksana_Leyn"><img class="get_in__img" src="./assets/images/icons/telegram.png" alt="Telegram"></a><a class="get_in__link" href="https://api.whatsapp.com/send?phone=79515224657"><img class="get_in__img" src="./assets/images/icons/watsapp.png" alt="WatsApp"></a></div>
       </div>
     </section>
   </main>

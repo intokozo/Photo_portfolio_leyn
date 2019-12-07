@@ -28,7 +28,7 @@ function slideInterval(arrSlides, current, timeout) {
 
 // ------------ Fade ------------
 function fade() {
-  var elements = document.getElementsByClassName('cat');
+  var elements = document.getElementsByClassName('catalogs__catalog');
 
   var visible = function (target) {
     var targetPosition = {
@@ -145,6 +145,8 @@ sc.showHide = function (){
 		a.className = "scrollTop";
 		a.href = "#";
 		a.style.display = "none";
+		a.style.transition = "all 1s";
+        a.style.outline = "none !important";
 		a.style.position = "fixed";
 		a.style.zIndex = "9999";
 		a.onclick = function(e){ e.preventDefault(); window.top.goTop(); }

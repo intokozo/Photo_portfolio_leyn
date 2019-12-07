@@ -2,12 +2,12 @@ mixin slider(num, name_file)
   div(class="slider item" + num)
     - var arr = ["", "_1", "_2", "_3", "_4", "_5"];
     each n in arr
-      img.slide(src=recent_path + name_file + n + '.jpg' alt='')
+      img.recent__img.slide(src=recent_path + name_file + n + '.jpg' alt='')
 
 section.recent#recent
     .container
-      h2.recent_title Примеры работ
-      .recent-img
+      h2.recent__title Примеры работ
+      .recent__imgs
         + slider(1, 'middle')
         + slider(2, 'little_one')
         + slider(3, 'little_two')

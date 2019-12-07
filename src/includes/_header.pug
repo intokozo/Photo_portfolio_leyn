@@ -1,25 +1,24 @@
-header
+header.header
   .container
-    .navbar
-      .links
-        a(href='#') Главная
-        a(href='#catalogs') Галерея
-        a(href='#get_in') Контакты
-      .logo_main
-        a(href="#")
-          img(src='./assets/images/icons/logo.png' alt='')
+    nav.header__navbar
+      .header__links-block
+        a.header__link(href='#') Главная
+        a.header__link(href='#catalogs') Галерея
+        a.header__link(href='#get_in') Контакты
+      .header__logo_main
+        a.header__logo_link(href="#")
+          img.header__logo_img(src='./assets/images/icons/logo.png' alt='')
       .social
-        a(href="https://vk.com/oksana_ph")
-          img(src=icons_path + 'vk.png' alt='' title="VK")
-        a(href="https://www.instagram.com/oksanaleyn/")
-          img(src=icons_path + 'instagram.png' alt='' title="Instagram")
-        a(href="https://oksanaleyn.ru")
-          img(src=icons_path + 'blog.png' alt='' title="Blog")
-        a(href="https://teleg.run/Oksana_Leyn")
-          img(src=icons_path + 'telegram.png' alt='' title="Telegram")
-        a(href="https://api.whatsapp.com/send?phone=79515224657")
-          img(src=icons_path + 'watsapp.png' alt='' title="WhatsApp")
-    h1 Оксана Лейн
-    h2.mine-subtitle Фотограф в Ростове-на-Дону
-    form(action="#recent")
-      button.discover_button Познакомиться
+        a.social__link(href="https://vk.com/oksana_ph")
+          img.social__img(src=icons_path + 'vk.png' alt='' title="VK")
+        a.social__link(href="https://www.instagram.com/oksanaleyn/")
+          img.social__img(src=icons_path + 'instagram.png' alt='' title="Instagram")
+        a.social__link(href="https://oksanaleyn.ru")
+          img.social__img(src=icons_path + 'blog.png' alt='' title="Blog")
+        a.social__link(href="https://teleg.run/Oksana_Leyn")
+          img.social__img(src=icons_path + 'telegram.png' alt='' title="Telegram")
+        a.social__link(href="https://api.whatsapp.com/send?phone=79515224657")
+          img.social__img(src=icons_path + 'watsapp.png' alt='' title="WhatsApp")
+    h1.header__title Оксана Лейн
+    h2.subtitle.header__subtitle Фотограф в Ростове-на-Дону
+      a.button.header__button(href='#recent') Познакомиться
