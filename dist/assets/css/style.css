@@ -308,8 +308,7 @@ html {
 }
 
 .catalogs .catalogs__catalog .catalogs__description-block .catalogs__button {
-    width: 280px;
-    text-align: center;
+    width: 260px;
 }
 
 @media (max-width: 1170px) {
