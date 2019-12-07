@@ -49,6 +49,7 @@ html {
 }
 
 .header {
+    min-width: 1170px;
     height: 900px;
     background: url("../images/img/bg/main_img.jpg") center center/cover no-repeat;
     text-align: center;
@@ -136,6 +137,51 @@ html {
     width: 300px;
 }
 
+@media (max-width: 1170px) {
+    .header {
+        height: 500px;
+    }
+
+    .header .header__navbar {
+        height: 150px;
+    }
+
+    .header .header__navbar .header__links-block {
+        height: 120px;
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        z-index: 5;
+    }
+
+    .header .header__navbar .header__links-block .header__link {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .header .header__navbar .header__logo_main {
+        display: none;
+    }
+
+    .header .header__title {
+        font-size: 90px;
+        margin-top: 100px;
+    }
+
+    .header .header__subtitle {
+        font-size: 40px;
+    }
+
+    .header .header__button {
+        display: none;
+    }
+}
+
 .social {
     height: 24px;
     display: -webkit-box;
@@ -170,9 +216,16 @@ html {
     margin-right: 0;
 }
 
+@media (max-width: 1170px) {
+    .social {
+        display: none;
+    }
+}
+
 .recent {
     background-color: #f8f6f4;
-    height: 1908px;
+    min-height: 1908px;
+    min-width: 1170px;
     padding-top: 120px;
     text-align: left;
 }
@@ -203,7 +256,14 @@ html {
     grid-column: 1 / 3;
 }
 
+@media (max-width: 1170px) {
+    .recent .recent__title {
+        font-size: 50px;
+    }
+}
+
 .catalogs {
+    min-width: 1170px;
     min-height: 1440px;
     padding-top: 120px;
 }
@@ -248,13 +308,64 @@ html {
 }
 
 .catalogs .catalogs__catalog .catalogs__description-block .catalogs__button {
-    width: 200px;
+    width: 280px;
     text-align: center;
+}
+
+@media (max-width: 1170px) {
+    .catalogs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-color: #f3e2c5;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .catalogs .catalogs__catalog {
+        background-color: white;
+        margin: 30px auto 0 auto;
+        height: 1400px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .catalogs .catalogs__catalog .catalogs__img {
+        margin: 0 auto;
+        width: 95%;
+        height: auto;
+    }
+
+    .catalogs .catalogs__catalog .catalogs__description-block .catalogs__subtitile {
+        font-size: 60px;
+    }
+
+    .catalogs .catalogs__catalog .catalogs__description-block .catalogs__text {
+        font-size: 45px;
+    }
+
+    .catalogs .catalogs__catalog .catalogs__description-block .catalogs__button {
+        font-size: 40px;
+        padding: 20px 20px;
+        width: 500px;
+        margin: 0 auto;
+    }
 }
 
 .get_in {
     padding: 100px 0 50px 0;
     min-height: 400px;
+    min-width: 1170px;
     text-align: center;
 }
 
@@ -290,6 +401,29 @@ html {
     transition: all 0.3s;
     width: 92px;
     height: 92px;
+}
+
+@media (max-width: 1170px) {
+    .get_in {
+        padding: 40px 0 50px 0;
+    }
+
+    .get_in .get_in__subtitle {
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+
+    .get_in .get_in__contact-field {
+        margin: 0 auto;
+        width: 600px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    .get_in .get_in__contact-field .get_in__img {
+        width: 110px;
+        height: 110px;
+    }
 }
 
 .slider {
@@ -378,10 +512,18 @@ html {
     height: 32px;
     bottom: 20px;
     left: 49%;
-    left-transition: all 0.3s;
-    left-outline: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    outline: none;
 }
 
 .scrollTop:hover {
     opacity: 0.5 !important;
+}
+
+@media (max-width: 1170px) {
+    .scrollTop {
+        display: none !important;
+    }
 }

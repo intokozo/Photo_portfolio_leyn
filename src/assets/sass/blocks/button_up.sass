@@ -1,13 +1,17 @@
 .scrollTop
-	background: url('./../images/icons/arrow.png') center center/cover no-repeat
-	width: 40px 
-	height: 32px 
-	bottom: 20px
-	left: 49%
+  background: url('./../images/icons/arrow.png') center center/cover no-repeat
+  width: 40px 
+  height: 32px 
+  bottom: 20px
+  left: 49%
   transition: all 0.3s
   outline: none
   
 
 .scrollTop:hover
-	opacity: 0.5 !important
+  opacity: 0.5 !important
+
+@media (max-width: $middle_screen)
+  .scrollTop
+    display: none !important
   

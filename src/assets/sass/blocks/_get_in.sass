@@ -1,6 +1,7 @@
 .get_in
   padding: 100px 0 50px 0
   min-height: 400px 
+  min-width: 1170px
   text-align: center 
   .get_in__subtitle
     color: #2c2a28 
@@ -21,3 +22,17 @@
         transition: all 0.3s
         width: 92px
         height: 92px
+
+@media (max-width: $middle_screen)
+  .get_in
+    padding: 40px 0 50px 0
+    .get_in__subtitle
+      font-size: 60px
+      margin-bottom: 50px
+    .get_in__contact-field
+      margin: 0 auto
+      width: 600px
+      justify-content: space-around
+      .get_in__img
+        width: 110px
+        height: 110px

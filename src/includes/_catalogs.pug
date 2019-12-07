@@ -1,3 +1,4 @@
+-var button_text = "Подробнее в блоге"
 section.catalogs#catalogs
     .container
       .catalogs__catalog
@@ -7,13 +8,13 @@ section.catalogs#catalogs
           p.catalogs__text
             |Любовь — это не решение. Это чувство. Если бы мы могли решать, кого любить, все было бы гораздо проще. Но куда менее волшебно.<br><br>Южный парк (South Park)
               
-          a.button.catalogs__button подробнее
+          a(href="https://oksanaleyn.ru/category/love-story/").button.catalogs__button #{button_text}
       .catalogs__catalog
         .catalogs__description-block
           h2.subtitile.catalogs__subtitile Портрет
           p.catalogs__text
             |Ведь мы — то, что мы думаем. Наши эмоции — рабы наших мыслей, а мы в свою очередь рабы эмоций.<br><br>Элизабет Гилберт. Есть, молиться, любить
-          a.button.catalogs__button подробнее
+          a(href="https://oksanaleyn.ru/category/портретная-съемка/").button.catalogs__button #{button_text}
         img.catalogs__img.mother(src=colections_path + 'portret.jpg' alt='')
       .catalogs__catalog
         img.catalogs__img.portret(src=colections_path + 'report.jpg' alt='')
@@ -21,13 +22,13 @@ section.catalogs#catalogs
           h2.subtitile.catalogs__subtitile Репортаж
           p.catalogs__text
             |Либо мир так мал, либо мы так огромны, во всяком случае, мы заполняем его целиком.<br><br>Франц Кафка
-          a.button.catalogs__button подробнее
+          a(href="https://oksanaleyn.ru/category/репортаж/").button.catalogs__button #{button_text}
       .catalogs__catalog
         .catalogs__description-block
           h2.subtitile.catalogs__subtitile Свадебная фотосессия
           p.catalogs__text
             |Человек несовершенен без второй половинки. Понимая это интуитивно, человек разыскивает свое совершенство, что приводит к свадьбе. <br><br>Платон
-          a.button.catalogs__button подробнее
+          a(href="https://oksanaleyn.ru/category/wedding/").button.catalogs__button #{button_text}
         img.catalogs__img.mother(src=colections_path + 'wedding.jpg' alt='')
       .catalogs__catalog
         img.catalogs__img.portret(src=colections_path + 'studio.jpg' alt='')
@@ -35,4 +36,4 @@ section.catalogs#catalogs
           h2.subtitile.catalogs__subtitile Студийная фотосессия
           p.catalogs__text
             |«Все люди одинаковы!». Нет это не так. Все люди — разные, и право отличаться от других надо отстаивать до конца и не заботясь о последствиях.<br><br>Пауло Коэльо. Победитель остается один
-          a.button.catalogs__button подробнее
+          a(href="https://oksanaleyn.ru/category/studio/").button.catalogs__button #{button_text}

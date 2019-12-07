@@ -1,4 +1,5 @@
 .header
+  min-width: 1170px
   height: 900px
   background: url('../images/img/bg/main_img.jpg') center center/cover no-repeat
   text-align: center
@@ -51,3 +52,29 @@
     margin: 120px auto 0 auto
     width: 300px
 
+@media (max-width: $middle_screen)
+  .header
+    height: 500px
+    .header__navbar
+      height: 150px
+      .header__links-block
+        height: 120px
+        position: fixed
+        background-color: #fff
+        width: 100%
+        justify-content: space-around
+        align-items: center;
+        z-index: 5
+        .header__link
+          text-align: center
+          font-size: 50px
+      .header__logo_main
+        display: none
+    .header__title
+      font-size: 90px
+      margin-top: 100px
+    .header__subtitle
+      font-size: 40px
+    .header__button
+      display: none
+  
